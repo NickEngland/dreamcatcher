@@ -70,11 +70,11 @@ SKIPREMAP=false
 #########################################################################################
 
 
-SIF="/nfs/cellgeni/singularity/images/dreamcatcher.sif"
-CMD="singularity run --bind /nfs,/lustre,/software $SIF"
-NCBI="/nfs/cellgeni/refdata_dreamcatcher/NCBI_datasets/bacteria_ref/ncbi_dataset/data/"
-KUDB="/nfs/cellgeni/refdata_dreamcatcher/KrakenUniq_select"
-HST2T="/nfs/cellgeni/refdata_dreamcatcher/decoy_reference/T2T_mito_phix"
+SIF="/hive/users/nengland/dreamcatcher/dreamcatcher.sif"
+CMD="singularity run --bind /hive/hubmap/data/CMU_Tools_Testing_Group/dreamcatcher,/hive/hubmap/data/CMU_Tools_Testing_Group/microbiome-rna/ $SIF"
+NCBI="/hive/hubmap/data/CMU_Tools_Testing_Group/dreamcatcher/refdata_dreamcatcher/NCBI_datasets/bacteria_ref/ncbi_dataset/data/"
+KUDB="/hive/hubmap/data/CMU_Tools_Testing_Group/dreamcatcher/refdata_dreamcatcher/KrakenUniq_select"
+HST2T="/hive/hubmap/data/CMU_Tools_Testing_Group/dreamcatcher/refdata_dreamcatcher/decoy_reference/T2T_mito_phix"
 SEQ2TAXID="$KUDB/seqid2taxid.map.refseq"
 GENBANK="$KUDB/assembly_summary_bacteria.txt"
 GSA="$KUDB/gcf_species_genus.tsv"
